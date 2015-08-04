@@ -1,0 +1,31 @@
+{
+  "name": "djmagtop100",
+  "version": "1.0.0",
+  "description": "an API with all the results from the djmag top100 djs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michieldewilde/djmagtop100.git"
+  },
+  "keywords": [
+    "djs",
+    "djmag",
+    "top",
+    "100"
+  ],
+  "author": "Michiel De Wilde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michieldewilde/djmagtop100/issues"
+  },
+  "homepage": "https://github.com/michieldewilde/djmagtop100",
+  "dependencies": {
+    "body-parser": "1.9.*",
+    "errorhandler": "1.2.*",
+    "express": "4.9.*",
+    "lodash": "^3.10.1",
+    "path": "^0.11.14",
+    "q": "1.4.*",
+    "request": "2.45.*"
+  }
+}
