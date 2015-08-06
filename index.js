@@ -35,9 +35,9 @@ app.get("/artists/:name", function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Content-Type");
 
-  var name = req.params.name,
-    artist = {},
-    year = null;
+  var name = req.params.name.replace(/-/g, ' ');
+      artist = {},
+      year = null;
 
   artist.name = name;
   artist.results = [];
@@ -45,7 +45,7 @@ app.get("/artists/:name", function(req, res) {
   results.forEach(function(result) {
     year = result.year;
     result.result.forEach(function(val) {
-      if (val.artist.toLowerCase() === artist.name) {
+      if (val.artist.toLowerCase() === artist.name.toLowerCase()) {
         artist.results.push({"year": year, "rank": val.rank});
       }
     });
