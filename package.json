@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "an API with all the results from the djmag top100 djs",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/michieldewilde/djmagtop100.git"
