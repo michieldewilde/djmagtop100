@@ -35,7 +35,7 @@ app.get("/artists/:name", function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Content-Type");
 
-  var name = req.params.name.replace(/-/g, ' ');
+  var name = req.params.name;
       artist = {},
       year = null;
 
